@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import AsyncComponentRE from '@/../AsyncComponent.min.js';
+// import AsyncComponentRE from '@/../AsyncComponent.min.js';
 // import AsyncComponentRE from '@/components/async-component/async-component.vue';
 export default {
     name: 'LayoutView',
@@ -20,17 +20,18 @@ export default {
             renderUrl: '',
             urlA: 'http://ripplescloud.uat.dcpc.com:5500/static/componentA.js',
             urlB: 'http://ripplescloud.uat.dcpc.com:5500/static/componentB.js'
-        };
+        }
     },
     components: {
-        AsyncComponentRE
+        AsyncComponentRE: () => import('@/components/async-component/async-component.vue')
+        // AsyncComponentRE
     },
     methods: {
         handleLoadButtonClick(type) {
-            this.renderUrl = this[type];
+            this.renderUrl = this[type]
         }
     }
-};
+}
 </script>
 
 <style lang="scss">

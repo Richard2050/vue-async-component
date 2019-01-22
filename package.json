@@ -21,6 +21,7 @@
     "main": "SyncComponent.min.js",
     "dependencies": {
         "axios": "^0.16.2",
+        "echarts": "^4.2.0-rc.2",
         "vue": "^2.4.2"
     },
     "devDependencies": {

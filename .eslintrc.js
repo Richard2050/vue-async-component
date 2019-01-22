@@ -24,6 +24,8 @@ module.exports = {
         semi: ['error', 'always'],
         'space-before-function-paren': ['error', 'never'],
         'no-useless-computed-key': 0,
-        indent: [0, 'tab']
+        indent: [0, 'tab'],
+        'no-new-func': 0,
+        semi: 0
     }
 }
