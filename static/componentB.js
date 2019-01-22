@@ -60,124 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 499);
+/******/ 	return __webpack_require__(__webpack_require__.s = 10);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 499:
-/***/ (function(module, exports, __webpack_require__) {
-
-function injectStyle (ssrContext) {
-  __webpack_require__(500)
-}
-var normalizeComponent = __webpack_require__(85)
-/* script */
-var __vue_script__ = __webpack_require__(502)
-/* template */
-var __vue_template__ = __webpack_require__(503)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-05613a06"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-
-/***/ 500:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(501);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(83)("096bc056", content, true, {});
-
-/***/ }),
-
-/***/ 501:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(82)(true);
-// imports
-
-
-// module
-exports.push([module.i, ".component .title[data-v-05613a06]{line-height:2;color:red}", "", {"version":3,"sources":["/Users/miao/Desktop/test/vue-async-component/src/views/component-b.vue"],"names":[],"mappings":"AACA,mCACE,cAAe,AACf,SAAW,CACZ","file":"component-b.vue","sourcesContent":["\n.component .title[data-v-05613a06] {\n  line-height: 2;\n  color: red;\n}\n"],"sourceRoot":""}]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 502:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'ComponentB',
-  props: {
-    url: String,
-    textarea: {
-      type: String,
-      default: ''
-    }
-  },
-  computed: {
-    textareaValue: {
-      get: function get() {
-        return this.textarea;
-      },
-      set: function set(val) {
-        this.$emit('update:textarea', val);
-      }
-    }
-  }
-});
-
-/***/ }),
-
-/***/ 503:
-/***/ (function(module, exports) {
-
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"component"},[_c('h2',{staticClass:"title"},[_vm._v("组件B")]),_vm._v(" "),_c('el-input',{attrs:{"type":"textarea","rows":2,"placeholder":"请输入内容"},model:{value:(_vm.textareaValue),callback:function ($$v) {_vm.textareaValue=$$v},expression:"textareaValue"}})],1)}
-var staticRenderFns = []
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-
-/***/ }),
-
-/***/ 82:
+/******/ ([
+/* 0 */
 /***/ (function(module, exports) {
 
 /*
@@ -259,8 +146,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-
-/***/ 83:
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -279,7 +165,7 @@ if (typeof DEBUG !== 'undefined' && DEBUG) {
   ) }
 }
 
-var listToStyles = __webpack_require__(84)
+var listToStyles = __webpack_require__(2)
 
 /*
 type StyleObject = {
@@ -488,8 +374,7 @@ function applyToTag (styleElement, obj) {
 
 
 /***/ }),
-
-/***/ 84:
+/* 2 */
 /***/ (function(module, exports) {
 
 /**
@@ -522,8 +407,7 @@ module.exports = function listToStyles (parentId, list) {
 
 
 /***/ }),
-
-/***/ 85:
+/* 3 */
 /***/ (function(module, exports) {
 
 /* globals __VUE_SSR_CONTEXT__ */
@@ -631,6 +515,114 @@ module.exports = function normalizeComponent (
 }
 
 
-/***/ })
+/***/ }),
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */,
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
 
-/******/ });
+function injectStyle (ssrContext) {
+  __webpack_require__(11)
+}
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(13)
+/* template */
+var __vue_template__ = __webpack_require__(14)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-59981d81"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(12);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("96d8b28c", content, true, {});
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(true);
+// imports
+
+
+// module
+exports.push([module.i, ".component .title[data-v-59981d81]{line-height:2;color:red}", "", {"version":3,"sources":["/Users/miao/Desktop/test/vue-async-component/src/views/component-b.vue"],"names":[],"mappings":"AACA,mCACE,cAAe,AACf,SAAW,CACZ","file":"component-b.vue","sourcesContent":["\n.component .title[data-v-59981d81] {\n  line-height: 2;\n  color: red;\n}\n"],"sourceRoot":""}]);
+
+// exports
+
+
+/***/ }),
+/* 13 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'ComponentB',
+    props: {
+        url: String,
+        textarea: {
+            type: String,
+            default: ''
+        }
+    },
+    computed: {
+        textareaValue: {
+            get: function get() {
+                return this.textarea;
+            },
+            set: function set(val) {
+                this.$emit('update:textarea', val);
+            }
+        }
+    }
+});
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports) {
+
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"component"},[_c('h2',{staticClass:"title"},[_vm._v("组件B")]),_vm._v(" "),_c('el-input',{attrs:{"type":"textarea","rows":2,"placeholder":"请输入内容"},model:{value:(_vm.textareaValue),callback:function ($$v) {_vm.textareaValue=$$v},expression:"textareaValue"}})],1)}
+var staticRenderFns = []
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+
+/***/ })
+/******/ ]);

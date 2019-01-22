@@ -8,10 +8,11 @@
 </template>
 
 <script>
-var echarts = require('echarts')
+// var echarts = require('echarts')
+import echarts from 'echarts'
 
 export default {
-    need: ['echarts'],
+    dynamicDependencies: ['echarts'],
     name: 'ComponentA',
     props: {
         url: String,

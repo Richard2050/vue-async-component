@@ -25,7 +25,8 @@ module.exports = {
     },
     externals: {
         vue: 'vue',
-        axios: 'axios'
+        axios: 'axios',
+        echarts: 'echarts'
     },
     module: {
         rules: [

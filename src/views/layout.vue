@@ -18,8 +18,8 @@ export default {
         return {
             textarea: '',
             renderUrl: '',
-            urlA: 'http://ripplescloud.uat.dcpc.com:5500/static/componentA.js',
-            urlB: 'http://ripplescloud.uat.dcpc.com:5500/static/componentB.js'
+            urlA: 'http://ripplescloud.dev.crpharm.com:5500/static/componentA.js',
+            urlB: 'http://ripplescloud.dev.crpharm.com:5500/static/componentB.js'
         }
     },
     components: {
