@@ -73,6 +73,7 @@ export default {
             async handler(val, oldVal) {
                 const url = this.url
                 if (!url) return
+
                 // Cache 缓存 根据 url 参数
                 let cache = (window._AsyncComponentCache = window._AsyncComponentCache || {})
                 let comName, res
@@ -90,6 +91,8 @@ export default {
                     if (!res) {
                         this.mode = ''
                         throwError('动态组件解析失败!')
+                    } else if (res.__esModule) {
+                        res = res.default
                     }
 
                     comName = 'async' + window.btoa(url).replace(/=/g, '')
