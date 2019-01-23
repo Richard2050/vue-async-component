@@ -14,7 +14,8 @@ module.exports = {
     },
     output: {
         path: resolve('/static/'),
-        filename: '[name].js'
+        filename: '[name].js',
+        publicPath: 'http://ripplescloud.dev.crpharm.com:5500/static/'
     },
     resolve: {
         extensions: ['.js', '.vue', '.json'],

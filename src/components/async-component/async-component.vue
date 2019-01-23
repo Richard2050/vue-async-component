@@ -17,6 +17,10 @@ const denpendenceUrlMap = {
     d3: 'http://ripplescloud.dev.crpharm.com:5500/node_modules/d3/dist/d3.min.js'
 }
 
+function throwError(msg) {
+    throw new Error(msg)
+}
+
 function loadDynamicDependencies(sourceCode) {
     let matchInfo, dependencies
     let allDependencies = []
@@ -32,7 +36,7 @@ function loadDynamicDependencies(sourceCode) {
             loaded[item] = 1
             let url = denpendenceUrlMap[item]
             if (!url) {
-                throw new Error(`动态依赖 ${item} 地址有误!`)
+                throwError(`动态依赖 ${item} 地址有误!`)
             } else {
                 asyncArray.push(
                     Axios.get(url).then(res => {
@@ -80,7 +84,12 @@ export default {
                         res = new Function(`return ${res.data}`)()
                     } catch (e) {
                         this.mode = ''
-                        throw new Error('动态组件解析失败!')
+                        throwError('动态组件解析失败!')
+                    }
+
+                    if (!res) {
+                        this.mode = ''
+                        throwError('动态组件解析失败!')
                     }
 
                     comName = 'async' + window.btoa(url).replace(/=/g, '')

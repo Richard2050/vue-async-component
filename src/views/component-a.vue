@@ -3,6 +3,7 @@
     <h2 class="title">组件A</h2>
     <el-input type="textarea" :rows="2" placeholder="请输入内容" v-model="textareaValue">
     </el-input>
+    <img src="../assets/logo.png" />
     <div class="echarts-box" ref="echarts-box"></div>
   </div>
 </template>

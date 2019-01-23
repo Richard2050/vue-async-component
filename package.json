@@ -13,9 +13,9 @@
     "license": "MIT",
     "scripts": {
         "dev": "node build/dev-server.js",
-        "start": "npm run build && npm run buildSC && npm run dev",
-        "build": "node build/build-async-components-library.js",
-        "buildSC": "node build/build-async-components.js",
+        "start": "npm run buildACLoader && npm run buildAC && npm run dev",
+        "buildACLoader": "node build/build-async-components-loader.js",
+        "buildAC": "node build/build-async-components.js",
         "lint": "eslint --ext .js,.vue src"
     },
     "main": "SyncComponent.min.js",

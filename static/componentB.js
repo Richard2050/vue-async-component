@@ -57,10 +57,10 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "http://ripplescloud.dev.crpharm.com:5500/static/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 10);
+/******/ 	return __webpack_require__(__webpack_require__.s = 11);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -522,23 +522,24 @@ module.exports = function normalizeComponent (
 /* 7 */,
 /* 8 */,
 /* 9 */,
-/* 10 */
+/* 10 */,
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 function injectStyle (ssrContext) {
-  __webpack_require__(11)
+  __webpack_require__(12)
 }
 var normalizeComponent = __webpack_require__(3)
 /* script */
-var __vue_script__ = __webpack_require__(13)
+var __vue_script__ = __webpack_require__(14)
 /* template */
-var __vue_template__ = __webpack_require__(14)
+var __vue_template__ = __webpack_require__(15)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-59981d81"
+var __vue_scopeId__ = "data-v-6316a072"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -554,20 +555,20 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(12);
+var content = __webpack_require__(13);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(1)("96d8b28c", content, true, {});
+var update = __webpack_require__(1)("4c09c5bd", content, true, {});
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(true);
@@ -575,17 +576,18 @@ exports = module.exports = __webpack_require__(0)(true);
 
 
 // module
-exports.push([module.i, ".component .title[data-v-59981d81]{line-height:2;color:red}", "", {"version":3,"sources":["/Users/miao/Desktop/test/vue-async-component/src/views/component-b.vue"],"names":[],"mappings":"AACA,mCACE,cAAe,AACf,SAAW,CACZ","file":"component-b.vue","sourcesContent":["\n.component .title[data-v-59981d81] {\n  line-height: 2;\n  color: red;\n}\n"],"sourceRoot":""}]);
+exports.push([module.i, ".component .title[data-v-6316a072]{line-height:2;color:red}", "", {"version":3,"sources":["/Users/miao/Desktop/test/vue-async-component/src/views/component-b.vue"],"names":[],"mappings":"AACA,mCACE,cAAe,AACf,SAAW,CACZ","file":"component-b.vue","sourcesContent":["\n.component .title[data-v-6316a072] {\n  line-height: 2;\n  color: red;\n}\n"],"sourceRoot":""}]);
 
 // exports
 
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
 //
 //
 //
@@ -617,12 +619,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 14 */
-/***/ (function(module, exports) {
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"component"},[_c('h2',{staticClass:"title"},[_vm._v("组件B")]),_vm._v(" "),_c('el-input',{attrs:{"type":"textarea","rows":2,"placeholder":"请输入内容"},model:{value:(_vm.textareaValue),callback:function ($$v) {_vm.textareaValue=$$v},expression:"textareaValue"}})],1)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"component"},[_c('h2',{staticClass:"title"},[_vm._v("组件B")]),_vm._v(" "),_c('el-input',{attrs:{"type":"textarea","rows":2,"placeholder":"请输入内容"},model:{value:(_vm.textareaValue),callback:function ($$v) {_vm.textareaValue=$$v},expression:"textareaValue"}}),_vm._v(" "),_c('img',{attrs:{"src":__webpack_require__(16)}})],1)}
 var staticRenderFns = []
 module.exports = { render: render, staticRenderFns: staticRenderFns }
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/img/big.3ce8072.png";
 
 /***/ })
 /******/ ]);
