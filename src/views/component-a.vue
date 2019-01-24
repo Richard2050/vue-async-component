@@ -4,6 +4,7 @@
     <el-input type="textarea" :rows="2" placeholder="请输入内容" v-model="textareaValue">
     </el-input>
     <img src="../assets/logo.png" />
+    <commponent-c></commponent-c>
     <div class="echarts-box" ref="echarts-box"></div>
   </div>
 </template>
@@ -11,10 +12,13 @@
 <script>
 // var echarts = require('echarts')
 import echarts from 'echarts'
-
+import commponentC from './component-c'
 export default {
     dynamicDependencies: ['echarts'],
     name: 'ComponentA',
+    components: {
+        commponentC
+    },
     props: {
         url: String,
         textarea: {
@@ -64,6 +68,13 @@ export default {
     }
     .echarts-box {
         height: 300px;
+    }
+
+    /deep/ .componentC {
+        h2 {
+            background-color: blue;
+            font-size: 30px;
+        }
     }
 }
 </style>
